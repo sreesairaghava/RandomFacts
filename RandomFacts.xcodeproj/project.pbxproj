@@ -11,6 +11,8 @@
 		04A5389B296AAF6300B47C15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A5389A296AAF6300B47C15 /* ContentView.swift */; };
 		04A5389D296AAF6800B47C15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A5389C296AAF6800B47C15 /* Assets.xcassets */; };
 		04A538A0296AAF6800B47C15 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A5389F296AAF6800B47C15 /* Preview Assets.xcassets */; };
+		04A538A7296AAF8200B47C15 /* facts.json in Resources */ = {isa = PBXBuildFile; fileRef = 04A538A6296AAF8200B47C15 /* facts.json */; };
+		04A538A9296AAF9B00B47C15 /* FactCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A538A8296AAF9B00B47C15 /* FactCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		04A5389A296AAF6300B47C15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		04A5389C296AAF6800B47C15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04A5389F296AAF6800B47C15 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04A538A6296AAF8200B47C15 /* facts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = facts.json; sourceTree = "<group>"; };
+		04A538A8296AAF9B00B47C15 /* FactCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +58,9 @@
 				04A53898296AAF6300B47C15 /* RandomFactsApp.swift */,
 				04A5389A296AAF6300B47C15 /* ContentView.swift */,
 				04A5389C296AAF6800B47C15 /* Assets.xcassets */,
+				04A538A6296AAF8200B47C15 /* facts.json */,
 				04A5389E296AAF6800B47C15 /* Preview Content */,
+				04A538A8296AAF9B00B47C15 /* FactCard.swift */,
 			);
 			path = RandomFacts;
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A538A0296AAF6800B47C15 /* Preview Assets.xcassets in Resources */,
+				04A538A7296AAF8200B47C15 /* facts.json in Resources */,
 				04A5389D296AAF6800B47C15 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A538A9296AAF9B00B47C15 /* FactCard.swift in Sources */,
 				04A5389B296AAF6300B47C15 /* ContentView.swift in Sources */,
 				04A53899296AAF6300B47C15 /* RandomFactsApp.swift in Sources */,
 			);
@@ -195,7 +203,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +257,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -270,6 +278,7 @@
 				DEVELOPMENT_TEAM = 644348XHYH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "\"Allow Photos Access to save the image to Photos\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +308,7 @@
 				DEVELOPMENT_TEAM = 644348XHYH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "\"Allow Photos Access to save the image to Photos\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
