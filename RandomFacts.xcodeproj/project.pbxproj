@@ -58,9 +58,9 @@
 				04A53898296AAF6300B47C15 /* RandomFactsApp.swift */,
 				04A5389A296AAF6300B47C15 /* ContentView.swift */,
 				04A5389C296AAF6800B47C15 /* Assets.xcassets */,
+				04A538A8296AAF9B00B47C15 /* FactCard.swift */,
 				04A538A6296AAF8200B47C15 /* facts.json */,
 				04A5389E296AAF6800B47C15 /* Preview Content */,
-				04A538A8296AAF9B00B47C15 /* FactCard.swift */,
 			);
 			path = RandomFacts;
 			sourceTree = "<group>";
