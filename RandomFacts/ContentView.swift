@@ -21,33 +21,25 @@ struct ContentView: View {
                 FactCard(fact: $currentFact, backgroundColor: $backgroundColor)
                     .frame(width: reader.size.width - 40, height: reader.size.height/2)
                     .padding([.horizontal,.vertical],20)
-                HStack{
-                    Button {
+                HStack {
+                    CustomColorPicker(selectedColor: $backgroundColor)
+                }
+                .background(.thinMaterial)
+                .cornerRadius(20)
+                .padding(.horizontal)
+                HStack(spacing:10){
+                    
+                    IconButton(icon: "arrow.down.circle", text: "Save", position: .trailing) {
                         generateImageWithWatermark()
-                    } label: {
-                        Text("Save This")
-                            .foregroundColor(.white)
-                            .padding()
-                            .background {
-                                RoundedRectangle(cornerRadius: 10)
-                                    .foregroundColor(.blue)
-                            }
                     }
                     .alert(isPresented: $showSuccessAlert) {
                         Alert(title: Text("Success"), message: Text("The image was saved to your photos."), dismissButton: .default(Text("OK")))
                     }
-                    Button {
+                    IconButton(icon: "arrowshape.turn.up.right.circle", text: "Next", position: .trailing) {
                         updateFacts()
-                    } label: {
-                        Text("Load New Fact")
-                            .foregroundColor(.white)
-                            .padding()
-                            .background {
-                                RoundedRectangle(cornerRadius: 10)
-                                    .foregroundColor(.blue)
-                            }
                     }
                 }
+                .padding()
 
 
             } .onAppear {

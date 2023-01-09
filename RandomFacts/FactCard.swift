@@ -19,11 +19,11 @@ struct FactCard: View {
             VStack(alignment: .leading) {
                 Text(fact)
                     .font(.headline)
-                    .foregroundColor(.black)
+                    .foregroundColor(backgroundColor == .black ? .white : .black)
                     .padding()
             }
         }
-        .onTapGesture {
+        .onLongPressGesture {
             self.isColorPickerShown.toggle()
         }
         .sheet(isPresented: $isColorPickerShown) {
